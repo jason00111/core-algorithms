@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import makeChange from '../src/makeChange'
+import makeChange from '../src/makeChange3'
 
 describe('makeChange()', function(){
 
@@ -49,5 +49,13 @@ describe('makeChange()', function(){
       nickels: 0,
       pennies: 0,
     })
+  })
+
+  it('can handle invalid inputs', function(){
+    expect(makeChange({price: 100})).to.deep.equal('Invalid input')
+
+    expect(makeChange({amountGiven: 169})).to.deep.equal('Invalid input')
+
+    expect(makeChange(100)).to.deep.equal('Invalid input')
   })
 })
