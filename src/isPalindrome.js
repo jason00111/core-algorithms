@@ -1,6 +1,8 @@
 function isLetter (character) {
-  return character.charCodeAt(0) >= 97 &&
-    character.charCodeAt(0) <= 122
+  const aCode = 97, zCode = 122
+
+  return character.charCodeAt(0) >= aCode &&
+    character.charCodeAt(0) <= zCode
 }
 
 String.prototype.reverse = function () {
