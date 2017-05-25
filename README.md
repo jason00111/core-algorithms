@@ -6,8 +6,18 @@ Base repository for the [Core Algorithms](http://jsdev.learnersguild.org/goals/1
 
 ## Installation and Setup
 
-_Fill this out_
+In a terminal, run
+`npm install`
 
 ## Usage and Examples
 
-_...and this_
+To run tests, in a terminal run
+`npm test`
+
+If you want to use any of the functions in node.js, import the function into your javascript file and then invoke the function.
+
+```js
+const makeChange = require('insert_path_to_project_here/src/makeChange')
+
+const change = makeChange({price: 100, amountGiven: 141})
+```
