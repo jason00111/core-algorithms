@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import isPalindrome from '../src/isPalindrome'
+import isPalindrome from '../src/isPalindrome2'
 
 describe('isPalindrome()', function(){
 
