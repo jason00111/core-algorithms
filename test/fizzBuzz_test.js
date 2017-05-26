@@ -49,7 +49,7 @@ describe('fizzBuzz()', function(){
   it('entries at positions which are not multiples of 5 or 3 are numbers corresponding to their position', function(){
     const notMultiplesOf5or3 = fizzBuzz()
       .map( (element, index) => ({element, index}) )
-      .filter( ({element, index}) =>
+      .filter( ({index}) =>
         (index + 1) % 3 !== 0 && (index + 1) % 5 !== 0
       )
 
